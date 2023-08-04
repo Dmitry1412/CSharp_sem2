@@ -11,4 +11,26 @@ System.Console.WriteLine(num1 > num2 ? num1 : num2);
 int randmNumber = new Random().Next(100, 1000);
 System.Console.WriteLine(randmNumber);
 System.Console.WriteLine((randmNumber / 100) * 10 + (randmNumber % 10));
+
+задача 3
+Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
 */
+
+int num1 = 4;
+int num2 = 16;
+
+if (Math.Pow(num1, 2) == num2)
+{
+    System.Console.WriteLine("является");
+    return;
+}
+
+if (Math.Pow(num2, 2) == num1)
+{
+    System.Console.WriteLine("является");
+    return;
+}
+else
+{
+    System.Console.WriteLine("не является");
+}
